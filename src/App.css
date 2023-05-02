@@ -22,9 +22,22 @@ p {
 }
 
 button {
-  flex: 1;
+  flex: 2;
   justify-content: center;
   align-items: center;
   padding: 10px;
   font-size: large;
+}
+
+input {
+  flex: 1;
+  margin-left: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  flex: 1;
+  /* border: 1px solid red; */
+  padding: 10px;
 }
