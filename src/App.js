@@ -4,8 +4,16 @@ import { useState } from 'react';
 
 export default function App() {
   const [color, setColor] = useState();
-  // const [hue, setHue] = useState('random');
-  // const [luminosity, setLuminosity] = useState('random');
+
+  function handleHue(event) {
+    setColor(
+      randomColor({
+        luminosity: 'bright',
+        hue: event.currentTarget.value,
+      }),
+    );
+    // console.log(event.currentTarget);
+  }
 
   return (
     <div className="App">
@@ -14,16 +22,7 @@ export default function App() {
         <button onClick={() => setColor(randomColor())}>Generate</button>
         <label>
           Set hue:
-          <input
-            onChange={(event) =>
-              setColor(
-                randomColor({
-                  luminosity: 'bright',
-                  hue: event.currentTarget.value,
-                }),
-              )
-            }
-          />
+          <input onChange={handleHue} />
         </label>
         <label>
           Set luminosity:
