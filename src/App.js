@@ -5,14 +5,24 @@ import { useState } from 'react';
 export default function App() {
   const [color, setColor] = useState();
 
-  function handleHue(event) {
-    setColor(
-      randomColor({
-        luminosity: 'bright',
-        hue: event.currentTarget.value,
-      }),
-    );
-    // console.log(event.currentTarget);
+  function handleChange(event) {
+    const [hue, luminosity] = event.currentTarget.value.split(' ');
+
+    if (luminosity) {
+      setColor(
+        randomColor({
+          luminosity: luminosity,
+          hue: hue,
+        }),
+      );
+    } else {
+      setColor(
+        randomColor({
+          luminosity: 'bright',
+          hue: hue,
+        }),
+      );
+    }
   }
 
   return (
@@ -21,12 +31,8 @@ export default function App() {
         <p>Generated Color: {color}</p>
         <button onClick={() => setColor(randomColor())}>Generate</button>
         <label>
-          Set hue:
-          <input onChange={handleHue} />
-        </label>
-        <label>
-          Set luminosity:
-          <input />
+          Set only hue or hue and luminosity:
+          <input onChange={handleChange} />
         </label>
       </div>
     </div>

@@ -34,10 +34,12 @@ input {
   margin-left: 10px;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
 }
 
 label {
   flex: 1;
   /* border: 1px solid red; */
   padding: 10px;
+  margin: 10px;
 }
