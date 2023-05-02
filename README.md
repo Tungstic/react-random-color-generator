@@ -2,11 +2,11 @@
 
 ## TODO
 
-- [ ] Scaffold the project, create Readme.
-- [ ] Delete unnecessary files/components.
-- [ ] Install types (devDependencies) by running preflight.
-- [ ] Choose and install a library for generating a random color.
-- [ ] Implement features.
+- [x] Scaffold the project, create Readme.
+- [x] Delete unnecessary files/components.
+- [x] Install types (devDependencies) by running preflight.
+- [x] Choose and install a library for generating a random color.
+- [x] Implement features.
 - [ ] Netlify deploy.
 - [ ] Preflight.
 - [ ] CodeSandbox (import?) NEW
