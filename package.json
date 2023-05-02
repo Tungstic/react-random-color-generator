@@ -7,6 +7,7 @@
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
     "@upleveled/react-scripts": "5.0.4",
+    "randomcolor": "^0.6.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -35,7 +36,9 @@
     ]
   },
   "devDependencies": {
-    "eslint-config-upleveled": "^4.1.8",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.1",
+    "eslint-config-upleveled": "^4.1.9",
     "stylelint": "^15.6.0",
     "stylelint-config-upleveled": "^1.0.2",
     "typescript": "^5.0.4"
