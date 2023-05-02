@@ -14,12 +14,9 @@
 
 ## Features
 
-Feature | What to use
-
-Button Generate (clickable) | State Hook
-
-Div containing color | style attribute?
-
-Random color per click | external library
-
-Text containing hex code of the random color | State Hook
+| Feature | What to use |
+| ------- | ----------- |
+| Button Generate (clickable) | State Hook |
+| Div containing color | style attribute? |
+| Random color per click | external library |
+| Text containing hex code of the random color | State Hook |
