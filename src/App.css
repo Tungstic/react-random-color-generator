@@ -1,36 +1,29 @@
 .App {
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .App > div {
   padding: 40px 50px 40px 50px;
   margin: auto;
   min-width: 400px;
-  min-height: 200px;
-  display: flex;
-  flex-flow: column wrap;
-}
-
-.innerDiv {
-  flex: 1;
-  justify-content: center;
-  align-items: center;
+  min-height: 50px;
   text-align: center;
 }
 
 button {
-  flex: 2;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
+  padding: 40px 50px 40px 50px;
+  margin: auto;
   font-size: large;
+  min-height: 50px;
+  min-width: 200px;
+  justify-self: center;
+  border-radius: 50%;
 }
 
 input {
-  flex: 1;
   margin-left: 10px;
   justify-content: center;
   align-items: center;
@@ -38,8 +31,8 @@ input {
 }
 
 label {
-  flex: 1;
   /* border: 1px solid red; */
   padding: 10px;
   margin: 10px;
+  justify-self: center;
 }
