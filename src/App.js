@@ -28,7 +28,7 @@ export default function App() {
   return (
     <div className="App">
       <div style={{ border: '2px solid black', backgroundColor: color }}>
-        <p>Generated Color: {color}</p>
+        <div className="innerDiv">Generated Color: {color}</div>
         <button onClick={() => setColor(randomColor())}>Generate</button>
         <label>
           Set only hue or hue and luminosity:

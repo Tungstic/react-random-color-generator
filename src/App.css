@@ -14,7 +14,7 @@
   flex-flow: column wrap;
 }
 
-p {
+.innerDiv {
   flex: 1;
   justify-content: center;
   align-items: center;
